@@ -9,6 +9,8 @@ To be precise, the following rules must be obeyed in this puzzle:
 2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.
 3. No disk may be placed on top of a disk that is smaller than it.
 
+The goal of the puzzle is to move all disks from one rod to another without breaking any of the rules.
+
 [![Tower of Hanoi (from wikipedia)](https://upload.wikimedia.org/wikipedia/commons/0/07/Tower_of_Hanoi.jpeg "Tower of Hanoi model (from wikipedia)")](https://en.wikipedia.org/wiki/Tower_of_Hanoi)
 
 It's a classic example of a discrete mathematical problem which can be solved by using recursion, although iterative algorithms also exist.
