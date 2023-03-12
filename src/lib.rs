@@ -69,7 +69,7 @@ pub fn hanoi(n: u32, start: u8, end: u8) {
 }
 
 /// Returns a number of steps needed to solve a Towers of Hanoi with `n` disks.
-pub fn hanoi_steps(n: u32) -> u128 {
+pub const fn hanoi_steps(n: u32) -> u128 {
     2u128.pow(n) - 1
 }
 
@@ -87,6 +87,10 @@ mod test {
 
     #[test]
     fn test_hanoi_steps() {
+        assert_eq!(hanoi_steps(0), 0);
+        assert_eq!(hanoi_steps(1), 1);
+        assert_eq!(hanoi_steps(2), 3);
+        assert_eq!(hanoi_steps(3), 7);
         assert_eq!(hanoi_steps(4), 15);
     }
 
